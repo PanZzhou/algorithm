@@ -1,0 +1,11 @@
+BFS_DFS.java :BFS算法的并行形式java实现
+Sequential_Dijkstra.java : dijkstra算法并行实现（一维块映射，使用hash把线程作用到静态数组的不同位置）
+Sequential_Prim.java ：Prim算法并行实现（同上）
+read_graph_from_txt.java :从graph_matrix_1.txt 中读取邻接矩阵（通过设置参数，从而灵活改变矩阵的维度）
+Parallel_Prim.java ：Prim算法并行形式
+Parallel_Floyd1.java :使用二维块映射的Floyd算法并行形式
+Parallel_Dijkstra.java ：Dijkstra算法并行形式
+Floyd_stream.java和Floyd_stream_Runner.java :Floyd算法流水线二维块映射形式，其中后者用于创建线程，每个线程私有两个用于存储其他线程发送来的第k次迭代需要的信息。前者创建后者的实例数组，实例通过前者提供的回调函数，实现线程间的信息传递。
+Floyd.java :Floyd算法串行形式。
+allvertex_shortestPathwith_Parallel_Dijkstra.java ：使用Parallel_Dijkstra.java提供的单源最短路径并行算法实现多元最短路径算法（创建多个线程，每个顶点分配多个线程执行单源最短路径算法并行实现）。
+allvertex_shortestPathwith_Parallel_Dijkstra.java :使用Sequential_Dijkstra.java提供的单源最短路径串行算法实现多源最短路径算法（每个线程分配多个顶点，此线程对每个顶点执行单源最短路径算法）。
