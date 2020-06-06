@@ -1,0 +1,11 @@
+SC01.txt    4    350(超时)
+SC02.txt    4    136
+SC03.txt    4    274
+SC04.txt    4    144
+SC05.txt    4    294
+
+test01.txt   4    2
+test02.txt   4    8
+test03.txt   4    46
+test04.txt   4   158
+test05.txt   4    1
